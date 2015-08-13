@@ -6,35 +6,85 @@
   <div class='body'>
     <nav class='navbar navbar-default'>
       <div class='container-fluid'>
-        <div class='navbar-header'></div>
+        <div class='navbar-header'>
+          <button class='navbar-toggle collapsed' data-target='#navbar-collapse-1' data-toggle='collapse'>
+            <span class='sr-only'>Toggle Navigation</span>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+          </button>
+          <a class='navbar-brand' href='#'>Ryan C. Matt</a>
+        </div>
+        <div class='navbar-collapse collapse' id='navbar-collapse-1'>
+          <ul class='nav navbar-nav'>
+            <li>
+              <a href='#positions'>Positions</a>
+            </li>
+            <li>
+              <a href='#projects'>Projects</a>
+            </li>
+            <li>
+              <a href='#education'>Education</a>
+            </li>
+            <li>
+              <a href='#skills'>Skills</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
     <div class='container'>
       <h1>Ryan Matt</h1>
       <h2>Software Engineer and Web Developer</h2>
-      <div class='positions'>
+      <div id='positions'>
         <h3>Positions</h3>
         <ul>
-          <li>Altamira</li>
+          <li>Altamira Technologies</li>
+          <ul>
+            <li>Software Engineer II | October 2013 - Current</li>
+            <li>Supported continuing development and O&M on two projects. The first (October 2013 - March 2015) focused on gathering and organizing metadata for various records and exposing that metadata via web services. Ruby on Rails, MySQL, and Bootstrap. The second (March 2015 - Current) focused on tracking HR data and various positions, promotions and deployments.  Ruby on Rails, ExtJS, and MySQL.</li>
+          </ul>
           <li>TASC</li>
+          <ul>
+            <li>Software Engineer | May 2012 - August 2012</li>
+            <li>Connected legacy tools for scraping a satellite network to an executive display for demonstrating performance changes with infrastructure adjustments. Java and JavaScript</li>
+          </ul>
           <li>TASC</li>
+          <ul>
+            <li>Software Engineering Intern | May 2011 - August 2011</li>
+            <li>Improved the UI of an R&D technical demo. ActionScript and Adobe Flex</li>
+          </ul>
           <li>Abraxas</li>
         </ul>
       </div>
-      <div class='education'>
+      <div id='projects'>
+        <h3>Projects</h3>
+        <ul>
+          <li>
+            <h4>
+              <a href='www.badgermille.com'>Badgermille</a>
+            </h4>
+            <p>A site dedicated to providing a practice space for fencing referees</p>
+          </li>
+          <li>
+            <h4>Android Instant Video Replay App for Fencing</h4>
+            <p>My senior technical thesis. I focused especially on developing a good user interface and interaction model to in order to target volunteers at fencing tournaments as the main users.</p>
+          </li>
+        </ul>
+      </div>
+      <div id='education'>
         <h3>Education</h3>
         <ul>
           <li>University of Virginia, School of Engineering and Sciences, BS Computer Science, 2013</li>
           <li>Lake Braddock Secondary School, Advanced Studies Diploma, 2008</li>
         </ul>
       </div>
-      <div class='skills'>
+      <div id='skills'>
         <h3>Programming Languages and Tools</h3>
         <ul>
-          <li>Extensive experience with Ruby on Rails, MySQL, JavaScript, HTML and CSS</li>
-          <li>Experienced with Java, Python, Matlab</li>
+          <li>Most comfortable with Ruby on Rails, SQL, JavaScript, HTML and CSS</li>
           <li>Preferred Tools: Vim, Sublime Text, Git, Heroku and various command line tools</li>
-          <li>Experienced with Eclipse, Subversion, Amazon Web Services</li>
+          <li>Experienced with Java, Python, Matlab</li>
         </ul>
       </div>
     </div>

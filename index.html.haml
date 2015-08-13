@@ -6,26 +6,60 @@
     %nav.navbar.navbar-default
       .container-fluid
         .navbar-header
+          %button.navbar-toggle.collapsed{ 'aria-expanded' => false, data: { toggle: 'collapse', target: '#navbar-collapse-1' } }
+            %span.sr-only Toggle Navigation
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+          %a.navbar-brand{href: '#'} Ryan C. Matt
+        .navbar-collapse.collapse#navbar-collapse-1 
+          %ul.nav.navbar-nav
+            %li
+              %a{ href: '#positions' } Positions
+            %li
+              %a{ href: '#projects' } Projects
+            %li
+              %a{ href: '#education' } Education
+            %li
+              %a{ href: '#skills' } Skills
     .container
       %h1 Ryan Matt
       %h2 Software Engineer and Web Developer
-      .positions
+      #positions
         %h3 Positions
         %ul
-          %li Altamira
+          %li Altamira Technologies
+          %ul
+            %li Software Engineer II | October 2013 - Current
+            %li Supported continuing development and O&M on two projects. The first (October 2013 - March 2015) focused on gathering and organizing metadata for various records and exposing that metadata via web services. Ruby on Rails, MySQL, and Bootstrap. The second (March 2015 - Current) focused on tracking HR data and various positions, promotions and deployments.  Ruby on Rails, ExtJS, and MySQL. 
           %li TASC
+          %ul
+            %li Software Engineer | May 2012 - August 2012
+            %li Connected legacy tools for scraping a satellite network to an executive display for demonstrating performance changes with infrastructure adjustments. Java and JavaScript
           %li TASC
+          %ul
+            %li Software Engineering Intern | May 2011 - August 2011
+            %li Improved the UI of an R&D technical demo. ActionScript and Adobe Flex
           %li Abraxas
-      .education
+      #projects
+        %h3 Projects
+        %ul
+          %li
+            %h4
+              %a{ href: 'www.badgermille.com' } Badgermille
+            %p A site dedicated to providing a practice space for fencing referees
+          %li 
+            %h4 Android Instant Video Replay App for Fencing
+            %p My senior technical thesis. I focused especially on developing a good user interface and interaction model to in order to target volunteers at fencing tournaments as the main users.
+      #education
         %h3 Education
         %ul 
           %li University of Virginia, School of Engineering and Sciences, BS Computer Science, 2013
           %li Lake Braddock Secondary School, Advanced Studies Diploma, 2008
-      .skills
+      #skills
         %h3 Programming Languages and Tools
         %ul
-          %li Extensive experience with Ruby on Rails, MySQL, JavaScript, HTML and CSS
-          %li Experienced with Java, Python, Matlab
+          %li Most comfortable with Ruby on Rails, SQL, JavaScript, HTML and CSS
           %li Preferred Tools: Vim, Sublime Text, Git, Heroku and various command line tools
-          %li Experienced with Eclipse, Subversion, Amazon Web Services
+          %li Experienced with Java, Python, Matlab
 
